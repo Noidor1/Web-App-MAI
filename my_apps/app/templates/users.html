@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Hello, Valentin</h1>
+    {% for user in users %}
+    <div><p>First Name: <b>{{user.first_name}}</b> Last Name: <b>{{user.last_name}}</b></p></div>
+    {% endfor %}
+{% endblock %}
+
+
